@@ -1,6 +1,230 @@
 <!DOCTYPE html>
 <html>
+<head>
+      <title>Majestic Llama</title>
+               <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic' rel='stylesheet' type='text/css'> -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,700' rel='stylesheet' type='text/css'>
+               <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                   <link  rel="stylesheet" type="text/css"  href="css/normalize.min.css">
+               <link  rel="stylesheet" type="text/css"  href="css/page.min.css">
+</head>
 <body>
-im here
+<!-- This is the home screen division with title to the right, navigation bar to the left and the welcome text at the bottom-->
+     <div class="home-wrap" id="home">
+          <div class="home-content">
+             <div class="top-bar cf">
+                 <h1 class="title">Majestic Llama</h1>
+                  <div class="menu-wrap cf">
+                     <!--navigation part of the site where anchor tags takes the user to the specific location-->
+                       <nav >
+                               <label for="show-menu" class="show-menu">Show Menu</label>
+                                <input type="checkbox" id="show-menu" role="button">
+                            
+                           <ul  class="menu cf" id="menu">
+                           <li><a href="#home">Home</a><span class="right-border"></span></li>
+                           <li><a href="#about_llama">About</a><span class="right-border"></span></li>
+                           <li><a href="#facts">Facts</a><span class="right-border"></span></li>
+                           <li><a href="#gallery">Gallery</a><span class="right-border"></span></li>
+                            <li><a href="#registration">Registration</a><span class="right-border"></span></li>
+                           <li><a href="#review">Reviews</a><span class="right-border"></span></li>
+
+                           </ul>
+                      </nav>
+                   </div>
+                   
+ 
+            </div>
+              <!--This is the welcome text the desc class is displayed on the computer screen , while m-desc class is designed to display on mobiles-->
+               <div  class="welcome-text">
+                   <h2  class="quote">"Llama is a south American relative of camel with no hump"</h2>
+                   <p   class="desc">Get a Llama as your pet today.<br><Strong>FREE  Llama!</strong> on <a href="#registration">registration</a> with us</p>
+                   <p   class="m-desc">FREE Llama on registration.</p>
+               </div>
+               <!--this arrow takes us to the about-llama division-->
+               <a href="#about_llama" class="down-arrow"></a> 
+            </div>
+          </div>
+<!-- This division is about the llama wich is divided in to small card contents and displayed in inline on the screen-->
+      <div class="about-wrap cf" id="about_llama">
+           <h3 class=heading>About Llama</h3>
+           <div class="about cf">
+                <ul class="cf">
+                    <li class="card-wrap">
+                         <div class="card">
+                              <img src="img/baby-llama.jpg">
+                                <div class = "card-content">
+                                  <h4>Baby</h4>
+                                   <p>The baby Llama's are cute and very social animals,baby llama is called cria</p>
+                               </div>
+                         </div>
+                    </li>
+                    <li class="card-wrap">
+			               	<div class="card">
+						<img src="img/group-llama.jpg">
+						<div class="card-content">
+							<h4>Groups</h4>
+							<p>Llamas live in groups,composed of up to 20 animals</p>
+						</div>				
+            					</div>
+                    </li>
+                    <li class="card-wrap">
+					<div class="card">
+						<img src="img/fur-llama.jpg">
+						<div class="card-content">
+							<h4>llama's fur</h4>
+							<p>Leather is made from their hides, and their wool is crafted into ropes, rugs, and fabrics</p>
+						</div>				
+            				</div>
+                    </li>
+                       <li class="card-wrap">
+                                         <div class="card">
+                                              <img src="img/stubborn-llama.jpg">
+                                               <div class="card-content">
+                                                    <h4>Stubborn</h4>
+                                                     <p>When the load on its back is too heavy, llama will refuse to carry it until some of the load is removed.</p>
+                                                </div>
+                                          </div>
+                        </li>
+                   </ul>
+                 
+                </div>
+<!--this arrow takes us to the facts division-->
+<a href="#facts" class="down-arrow"></a>
+               </div>  
+
+ <!-- This division is about the facts on llama, where picture about the facts are displayed in line and the facts and described below it-->
+           <div class="facts-wrap cf" id="facts">
+<!--This is the heading of the division-->
+                     <h3 class="heading bg-y">Facts about Llama</h3>
+<!--This is the image section of the division-->
+                       <div class="facts-pictures cf">
+                                              <ul> 
+                                                          <li class="f-picture" id="spit"></li>
+				<li class="f-picture" id="virus"></li>
+				<li class="f-picture" id="gaurd"></li>
+                                                             <li class="f-picture" id="show"></li>
+			
+			</ul>
+                       </div>
+                <div class="facts-description bg-y">
+<!--This is the descrption part of the facts division-->
+                                   <div class="fact-description">
+                                       <ol id="list_facts">
+                                           <li class="f-desc">Llamas normally don't spit at people. They spit on other llamas. (It's a llama's way of saying "get lost!")</li>
+                                           <li class="f-desc">Antibodies in the immune system of the South American animal easily defeat the killer virus AIDS<a href="http://www.express.co.uk/news/uk/547745/Llama-Blood-Anti-Bodies-Life-Saving-HIV-AIDS-vaccine-new-research">(Research is still in progress)</a>.</li>
+                                            <li class="f-desc">Llamas are used to guard herds of sheep, goats, and alpacas.The llamas are effective at keeping away coyotes and other predators.</li>
+
+                                         </ol>
+                                  </div>
+                                <!--this arrow takes us to the gallery division-->
+                              <a href="#gallery" class="down-arrow"></a> 
+                     </div>
+
+         </div>
+
+<!--This is the slide show part of the pictures of Llama i.e gallery of Llama, all the images are placed in figure tag and a figure caption is added-->
+ <div  class="gallery-wrap  cf"  id="gallery">
+                     
+          <h3 class="heading gallery"><span>Gallery</span></h3>
+            <p class="text-center italic bold">Collection of beautiful Llama pictures</p>
+                     <div class="llama-slideshow"> 
+                         <figure> 
+                                   <img src="img/ss1.jpg" width="495" height="370" /> 
+                                    <figcaption><strong>Beautiful</strong> Llama near mountains during spring</figcaption> 
+                               </figure> 
+                               <figure> 
+                                    <img src="img/ss2.jpg" width="495" height="370" /> 
+                                           <figcaption><strong>Winter</strong>Llama on mountains during winter</figcaption> 
+                                   </figure> 
+                                 <figure> 
+                                          <img src="img/ss3.jpg" width="495" height="370" /> 
+                                            <figcaption><strong>Domestic</strong>Llama in the fields</figcaption> 
+                                   </figure> 
+                                  <figure> 
+                                        <img src="img/ss4.jpg" width="495" height="370" /> 
+                                           <figcaption><strong>Herd</strong>of Llamas</figcaption> 
+                                     </figure> 
+                                         <figure> 
+                                                    <img src="img/ss5.jpg" width="495" height="370" /> 
+                                                     <figcaption><strong>Group</strong>Llama usually live in group</figcaption> 
+                                                </figure> 
+                                            <figure> 
+                                                   <img src="img/ss6.jpg" width="495" height="370" /> 
+                                                      <figcaption><strong>Another Group</strong>of Llama's</figcaption> 
+                                               </figure> 
+                                                 <figure> 
+                                                    <img src="img/ss7.jpg" width="495" height="370" /> 
+                                        <figcaption><strong>wallpaper</strong>Beautiful capture of Llama's in mountain</figcaption> 
+                                         </figure> 
+                                 <figure> 
+                                      <img src="img/ss8.jpg" width="495" height="370" /> 
+                                      <figcaption><strong>Spring</strong>Young Llama during spring season</figcaption> 
+                                    </figure> 
+                                 </div>
+<!--This arrow takes us to the registration division-->
+            <a href="#registration" class="down-arrow"></a>
+
+         </div> 
+<!-- This division is the registration form section for the site where a form with an image is maitained at the left and 4 basic elements and submit button are displayed -->
+<div class="Registration-wrap cf" id="registration">
+		<h3 class="heading">Registration form</h3> 
+                                            <!--  <div class="form-image"> <img class="sketch" src="img/llama-front.png">
+                                                                   </div>--> 
+			<div class="form-wrap">
+                                                           <!--The basic form on the website , the related java script file is attached in the link-->
+                                                                         <form class="cf" name="Registration" onsubmit="return validate()">
+                                                                       
+					<div><input class="field" type="text" maxlength=50   id="t1" placeholder=" First name" ></div>
+                                                                          <div><input class="field" type="text" maxlength=50   id="t2"  placeholder="Last name"></div>
+					<div><input class="field" type="text"                         id="e"   placeholder="Email"></div>
+					<div><input class="field" type="text" maxlength=10  id="t3" placeholder="Contact Number"></div>
+
+					<div><input class="btn bg-y"  type="submit" value="submit" name="submit"></div>
+				               </form>
+
+				<p class="note">"This is a just for fun, you have to buy your own Llama from a pet shop" </p>
+				<!--this arrow takes us to the review division--> 
+                                                    <a href="#review" class="down-arrow"></a>	
+			</div>
+                           
+	</div>
+<!-- This is the static review section of the site where a collection of images are placed to the left with animation and few reviews are displayed to the right-->
+<div class="reviews-wrap cf" id="review"> 
+  
+   
+ <h3 class="heading">REVIEWS</h3>
+                       
+                          <div class="photos">
+                          <img src="img/lama.jpg" > 
+                         <img src="img/llama-1.jpg" > 
+                         <img src="img/lama-2.jpg" > 
+                         <img src="img/llama-3.jpg" > 
+                          <img src="img/lama-4.jpg" > 
+                           </div>
+                              
+<!-- The review by 3 different names are listed here with same class names-->
+
+                                             <div class="reviews">
+                                               <p class="name" >    Divya: </p>
+                                                <p  class="r-desc"> It is really awesome site! I have got a baby llama as my pet.It is very cute. </p>
+                                                  
+                                                  </div>
+                                      <div class="reviews"> 
+                                               <p class="name" > Nancy :</p>
+                                                <p  class="r-desc"> Amazing site! They give away llama for free,i have got one yesterday. </p>
+                                                  
+                                                  </div>
+                                       <div class="reviews"> 
+                                               <p class="name" > Eric :</p>
+                                                <p  class="r-desc"> Wohoo! do register to get a Llama, i have got one,it's your turn </p>
+                                                  
+                                                  </div>
+<!--This takes us back to the home page-->
+<a href="#home" class="down-arrow"></a>
+</div>
+<!--Java script file is placed at the end so that pages loads faster-->
+<script type="text/javascript" src="js/form.js"></script>
+
 </body>
 </html>
