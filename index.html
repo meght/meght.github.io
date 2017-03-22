@@ -5,14 +5,14 @@
   <link rel="icon" href="me.png.JPG" type="image/x-png">
 
   <script src="jQuery.js"></script>
-  <script src="http://code.highcharts.com/highcharts.js"></script>
-  <script src="http://code.highcharts.com/modules/exporting.js"></script>
+  
   <script src="helper.js"></script>
-  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+  
 
-  <meta name="viewport" content="width=device-width">
+ // <meta name="viewport" content="width=device-width">
+
 </head>
-<body unresolved>
+<body>
   <div id="main">
     <div id="header" class="center-content">
       <ul id="topContacts" class='flex-box'></ul>
@@ -27,13 +27,7 @@
     <div id="education" class='gray'>
       <h2>Education</h2>
     </div>
-    <div id="skillsChart">
-      <h2>Skills Chart</h2>
-      <div id="container" style="min-width: 310px; height: 400px; max-width: 1200px; margin: 0 auto"></div>
-    </div>
-    <div id="mapDiv">
-      <h2>Where I've Lived and Worked</h2>
-    </div>
+    
     <div id="letsConnect" class='dark-gray'>
       <h2 class='orange center-text'>Let's Connect</h2>
       <ul id="footerContacts" class="flex-box">
@@ -59,15 +53,10 @@
     if(document.getElementsByClassName("education-entry").length === 0) {
       document.getElementById("education").style.backgroundColor = "black";
     }
-//    if(document.getElementsByClassName("skills-entry").length === 0) {
-//      document.getElementById("skillsChart").style.backgroundColor = "black";
-//    }
+
     if(document.getElementsByClassName("flex-item").length === 0) {
       document.getElementById("letsConnect").style.backgroundColor = "black";
     }
-    if(document.getElementById("map") == undefined) {
-      document.getElementById("mapDiv").style.display = "none";
-    }
+    
   </script>
 </body>
-
