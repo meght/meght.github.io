@@ -2,22 +2,22 @@ var bio = {
 	"name": "xxx",
 	"role": "Software Developer",
 	"contacts": {
-		"email": "cheryl.court@gmail.com",
-		"github": "cherylcourt",
-		"twitter": "@cherylcourt",
-		"location": "Edmonton, Alberta, Canada"
+		"email": "xxx@gmail.com",
+		"github": "meght",
+		"twitter": "@abcd",
+		"location": "USA, USA, USA"
 	},
 	"picture": "me.png.JPG",
-	"welcomeMessage": "I'm currently working as a Software Developer in Edmonton, Alberta, Canada.  Thanks for stopping by!",
-	"skills": ["Java", "python", "Software Development", "Test Driven Development", "Retrospective Facilitation"]
+	"welcomeMessage": "I'm currently working as a Software Developer in ABC, DEF, HIJ.  Thanks for stopping by!",
+	"skills": ["PERL", "PHP", "Software Development", "Test Driven Development", "JAVA SCRIPT"]
 };
 
 var work = {
 	"jobs": [
 		{
-			"employer": "Localize",
-			"title": "Senior Software Developer",
-			"location": "Edmonton, Alberta, Canada",
+			"employer": "LLL",
+			"title": "Software Developer",
+			"location": "ABC, ABC, ABC",
 			"datesWorked": "March 2015 - December 2015",
 			"description": "I was hired to work on Localize's online system, which involved knowledge in C# development, jQuery, knockoutJS, "+
 				"SQL Server, Razor templates and Wordpress. I had limited experience with some of these so I learned quickly to become "+
@@ -26,7 +26,7 @@ var work = {
 				"from everyone I worked with there."
 		},
 		{
-			"employer": "Enbridge",
+			"employer": "XXX",
 			"title": "Software Developer",
 			"location": "Edmonton, Alberta, Canada",
 			"datesWorked": "September 2008 - March 2015",
@@ -38,7 +38,7 @@ var work = {
 			"as facilitating project retrospective discussions."
 		},
 		{
-			"employer": "Epcor",
+			"employer": "MMM",
 			"title": "Systems Analyst",
 			"location": "Edmonton, Alberta, Canada",
 			"datesWorked": "September 2003 - April 2006",
@@ -64,16 +64,7 @@ var work = {
 			"assisstant.  At the University Computer Centre I helped students with use of the computing resources " +
 			"available.  As a computer science tutor I aided students with class work and helped them through problems."
 		},
-		{
-			"employer": "ABB",
-			"title": "Praktikant",
-			"location": "Baden, Switzerland",
-			"datesWorked": "May 2000 - August 2000",
-			"description": "This was my final four month co-op placement through the University Co-op program.  I " +
-			"designed and implemented a prototype software application using JES (Java Embedded Server) and JMS (Java " +
-			"Messaging System) for communication with a European train system.  I was also involved in a collaborative " +
-			"effort of co-authoring a software patent with my colleagues involving JMS technology."
-		},
+		
 		{
 			"employer": "Ontario Power Generation",
 			"title": "Programmer",
@@ -97,13 +88,13 @@ var work = {
 
 var education = {
 	"schools": [
-		{ "name": "University of Windsor",
+		{ "name": "AAAr",
 			"datesAttended": "1996 - 2001",
-			"location": "Windsor, Ontario, Canada",
+			"location": "A,A,A",
 			"degree": "B.Sc.(Hon) Software Engineering",
 			"major": "Computer Science",
-			"minor": "Germanic Studies",
-			"url": "www.uwindsor.ca"
+			"minor": "ABC",
+			"url": "www.ABC.COM"
 		}		
 	],
 	"onlineCourses": [
@@ -116,21 +107,6 @@ var education = {
 			"title": "HTML5 Canvas",
 			"completed": "November 2014",
 			"url": "https://www.udacity.com/course/ud292"
-		},
-		{ "school": "Udacity",
-			"title": "Javascript Basics",
-			"completed": "October 2014",
-			"url": "https://www.udacity.com/course/ud804"
-		},
-		{ "school": "Udacity",
-			"title": "Intro to HTML and CSS",
-			"completed": "October 2014",
-			"url": "https://www.udacity.com/course/ud304"
-		},	
-		{ "school": "Udacity",
-			"title": "Web Development",
-			"completed": "August 2014",
-			"url": "https://www.udacity.com/course/cs253"
 		}
 	]
 };
@@ -143,7 +119,7 @@ var projects = {
 			"description": "Created an online game using HTML5 Canvas as part of Udacity's Front-End Web Developer " +
 			"Nanodegree.",
 			"images": ["images/frogger.jpg"],
-			"url": "http://www.cherylcourt.ca/frogger"
+			"url": "HHH"
 		},
 		{
 			"title": "Online Portfolio",
@@ -151,14 +127,7 @@ var projects = {
 			"description": "Created an online portfolio of work as part of Udacity's Front-End Web Developer " +
 			"Nanodegree.",
 			"images": ["images/portfolio.jpg"],
-			"url": "http://www.cherylcourt.ca/"
-		},
-		{
-			"title": "Web Development Wiki",
-			"datesWorked": "June 2014 - August 2014",
-			"description": "Created an online wiki for Udacity's Web Development Course.",
-			"images": ["images/web.jpg"],
-			"url": "http://helpful-kit-572.appspot.com/"
+			"url": "AAA"
 		}
 	]
 };
