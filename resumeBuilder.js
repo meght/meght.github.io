@@ -1,5 +1,5 @@
 var bio = {
-	"name": "Cheryl Court",
+	"name": "xxx",
 	"role": "Software Developer",
 	"contacts": {
 		"email": "cheryl.court@gmail.com",
@@ -7,7 +7,7 @@ var bio = {
 		"twitter": "@cherylcourt",
 		"location": "Edmonton, Alberta, Canada"
 	},
-	"picture": "me.png",
+	"picture": "me.png.JPG",
 	"welcomeMessage": "I'm currently working as a Software Developer in Edmonton, Alberta, Canada.  Thanks for stopping by!",
 	"skills": ["Java", "python", "Software Development", "Test Driven Development", "Retrospective Facilitation"]
 };
