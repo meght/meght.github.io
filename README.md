@@ -1,1 +1,3 @@
-im here
+Hello, 
+
+I'm trying to create a github page for the first time. Let's see how it shapes up....
