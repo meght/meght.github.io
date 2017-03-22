@@ -1,0 +1,359 @@
+doctype html
+html(lang="en")
+  head
+    title Mitch
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(name="description" content="Mitch Lee's personal website")
+    meta(name="keywords" content="Mitchell Mitch Lee software code programmer")
+    meta(name="author" content="Mitch Lee")
+
+    style.
+      body {
+        background: #F17370;
+        color: #FFFFFF;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        font-family: 'Avenir', Arial;
+        font-weight: 600;
+        font-size: 3em;
+      }
+
+      header {
+        position: relative;
+        margin: 20px 10px 20px 15%;
+      }
+
+      svg {
+        pointer-events: none;
+      }
+
+      figure {
+        margin: 0;
+      }
+
+      .drawings {
+        position: relative;
+        max-height: 600px;
+      }
+
+      .illustration {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        max-height: 100%;
+        max-width: 100%;
+        opacity: 0;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+      }
+
+      .arrow-large,
+      .arrow-small {
+        position: absolute;
+        top: 70px;
+        left: 20%;
+      }
+
+      .arrow-small {
+        opacity: 0;
+      }
+
+      .line-drawing,
+      .illustration {
+        -webkit-transition: opacity 0.5s;
+        transition: opacity 0.5s;
+      }
+
+      .line-drawing path {
+        fill: none;
+        stroke: white;
+        stroke-width: 3;
+      }
+
+      .navigation {
+        margin: 0 auto;
+        max-width: 40em;
+        width: 95%;
+        text-align: center;
+      }
+
+      .link-group {
+        display: inline-block;
+      }
+
+      .link {
+        margin: 0 0.25em;
+        display: inline-block;
+      }
+
+      .link:hover {
+        cursor: pointer;
+        color: rgba(70,70,70,0.8);
+        text-shadow: 1px 4px 6px #F17370, 0 0 0 #000, 1px 4px 6px #F17370;
+      }
+
+      ::-moz-selection { background: #5af; color: #fff; text-shadow: none; }
+      ::selection { background: #5af; color: #fff; text-shadow: none; }
+
+      .link a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .show {
+        opacity: 1;
+      }
+
+      .hide {
+        opacity: 0;
+      }
+
+      @media screen and (max-width: 840px) {
+        .arrow-large {
+          opacity: 0;
+        }
+
+        .arrow-small {
+          opacity: 1;
+        }
+      }
+
+      @media screen and (max-width: 520px) {
+        .drawings,
+        .line-drawing {
+          height: 400px;
+        }
+
+        .arrow-small {
+          top: -80px;
+        }
+      }
+
+  body
+    .container
+
+      header.
+        Mitch
+
+      #main.main
+        figure
+          .arrow-large
+            svg.line-drawing(width="200" height="200" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200")
+              path(d="M20 10 Q 20 145 150 150")
+              path(d="M130 130 150 150")
+              path(d="M130 165 151 149")
+          .arrow-small
+            svg.line-drawing(width="100" height="100" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100")
+              path(d="M40 10 Q 45 40 70 60")
+              path(d="M72 50 70 61")
+              path(d="M59 60 71 60")
+          .drawings.profile
+            img.illustration(src="https://s3.amazonaws.com/mitchjlee/assets/mitch.png" alt="Mitch")
+            svg.line-drawing(width="100%" height="600" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 750")
+              path(d="M358.8,40.5c15.015,0.986,21.944,6.765,33.3,11.4 c6.314-4.731,23.863,15.693,27.9,18.3c1.1-0.4,2.2-0.8,3.3-1.2c26.916,36.493,25.121,44.819,25.8,92.4 c16.938,12.35,5.376,56.285-14.7,55.5c-6.361,21.459-2.814,48.618-3.9,76.5c18.432,3.776,59.007,33.268,77.1,43.8 c17.898,5.4,35.802,10.801,53.7,16.2c10.599,9.599,21.201,19.201,31.8,28.8c19.993,24.744,64.628,316.634,39,367.8 c-27.097,0-54.203,0-81.3,0c3.6-25.797,7.2-51.603,10.8-77.4c5.506-36.164-16.328-92.737-31.2-114.3c-4,46.495-8,93.005-12,139.5 c3.646,17.691,21.667,27.466,16.8,52.2c-111.889,0-223.811,0-335.7,0c0.627-18.315,18.907-146.543,7.2-161.7 c-0.2,0.1-0.4,0.2-0.6,0.3c-10.992,26.117-10.879,132.993-8.7,161.4c-26.597,0-53.203,0-79.8,0 c-1.356-71.715,5.887-128.836,10.5-199.2c-15.674-9.836-5.848-31.645-2.1-51.6c1-20.198,2-40.402,3-60.6 c13.401-74.38,50.709-95.109,120-106.2c9.116-1.459,44.085-30.471,54.9-32.1c-6.818-24.692,4.525-56.949-6-76.8 c-20.013,4.91-33.004-45.86-16.8-51c-3.1-11.799-6.2-23.601-9.3-35.4C260.947,74.18,314.281,61.192,358.8,40.5z")
+
+        .navigation
+          .link-group
+            .link
+              a(href="https://github.com/dontmitch/mitchjlee" target="_blank") code
+            .link
+              a(href="https://twitter.com/dontmitch" target="_blank") social
+          .link-group
+            .link
+              a(href="https://medium.com/@dontmitch/" target="_blank") blog
+            .link
+              a(href="http://www.linkedin.com/in/mitchjlee/" target="_blank") resume
+
+  script.
+    /**
+     * Modified version of svganimations.js v1.0.0
+     *
+     * the svg path animation is based on http://24ways.org/2013/animating-vectors-with-svg/ by Brian Suda (@briansuda)
+     *
+     * Licensed under the MIT license.
+     * http://www.opensource.org/licenses/mit-license.php
+     *
+     * Copyright 2013, Codrops
+     * http://www.codrops.com
+     */
+    (function() {
+
+      'use strict';
+
+      var docElem = window.document.documentElement;
+
+      window.requestAnimFrame = function(){
+        return (
+          window.requestAnimationFrame       ||
+          window.webkitRequestAnimationFrame ||
+          window.mozRequestAnimationFrame    ||
+          window.oRequestAnimationFrame      ||
+          window.msRequestAnimationFrame     ||
+          function(/* function */ callback){
+            window.setTimeout(callback, 1000 / 60);
+          }
+        );
+      }();
+
+      window.cancelAnimFrame = function(){
+        return (
+          window.cancelAnimationFrame       ||
+          window.webkitCancelAnimationFrame ||
+          window.mozCancelAnimationFrame    ||
+          window.oCancelAnimationFrame      ||
+          window.msCancelAnimationFrame     ||
+          function(id){
+            window.clearTimeout(id);
+          }
+        );
+      }();
+
+      function SVGEl(el) {
+        this.el = el;
+        this.image = this.el.previousElementSibling;
+        this.current_frame = 0;
+        this.total_frames = 100;
+        this.path = new Array();
+        this.length = new Array();
+        this.handle = 0;
+        this.init();
+      }
+
+      SVGEl.prototype.init = function() {
+        var self = this;
+        [].slice.call(this.el.querySelectorAll('path')).forEach(function(path, i) {
+          self.path[i] = path;
+          var l = self.path[i].getTotalLength();
+          self.length[i] = l;
+          self.path[i].style.strokeDasharray = l + ' ' + l;
+          self.path[i].style.strokeDashoffset = l;
+        });
+      };
+
+      SVGEl.prototype.render = function() {
+        if (this.rendered) return;
+        this.rendered = true;
+        this.draw();
+      };
+
+      SVGEl.prototype.draw = function() {
+        var self = this,
+          progress = this.current_frame/this.total_frames;
+        if (progress > 1) {
+          window.cancelAnimFrame(this.handle);
+          this.showImage();
+        } else {
+          this.current_frame++;
+          for (var j=0, len = this.path.length; j<len;j++) {
+            this.path[j].style.strokeDashoffset = Math.floor(this.length[j] * (1 - progress));
+          }
+          this.handle = window.requestAnimFrame(function() { self.draw(); });
+        }
+      };
+
+      SVGEl.prototype.showImage = function() {
+        this.image.classList.add('show');
+        this.el.classList.add('hide');
+      };
+
+      function getViewportH() {
+        var client = docElem['clientHeight'],
+          inner = window['innerHeight'];
+
+        if (client < inner)
+          return inner;
+        else
+          return client;
+      }
+
+      function scrollY() {
+        return window.pageYOffset || docElem.scrollTop;
+      }
+
+      // http://stackoverflow.com/a/5598797/989439
+      function getOffset( el ) {
+        var offsetTop = 0, offsetLeft = 0;
+        do {
+          if ( !isNaN( el.offsetTop ) ) {
+            offsetTop += el.offsetTop;
+          }
+          if ( !isNaN( el.offsetLeft ) ) {
+            offsetLeft += el.offsetLeft;
+          }
+        } while( el = el.offsetParent )
+
+        return {
+          top : offsetTop,
+          left : offsetLeft
+        };
+      }
+
+      function inViewport(el, h) {
+        var elH = el.offsetHeight,
+            scrolled = scrollY(),
+            viewed = scrolled + getViewportH(),
+            elTop = getOffset(el).top,
+            elBottom = elTop + elH,
+            // if 0, the element is considered in the viewport as soon as it enters.
+            // if 1, the element is considered in the viewport only when it's fully inside
+            // value in percentage (1 >= h >= 0)
+            h = h || 0;
+
+        return (elTop + elH * h) <= viewed && (elBottom) >= scrolled;
+      }
+
+      function init() {
+        var svgs = Array.prototype.slice.call( document.querySelectorAll( '#main .drawings svg' ) ),
+          svgArr = new Array(),
+          didScroll = false,
+          resizeTimeout;
+
+        svgs.forEach(function(el, i) {
+          var svg = new SVGEl(el);
+          svgArr[i] = svg;
+          setTimeout(function(el) {
+            return function() {
+              if (inViewport(el.parentNode)) {
+                svg.render();
+              }
+            };
+          }(el), 250);
+        } );
+
+        var scrollHandler = function() {
+            if(!didScroll) {
+              didScroll = true;
+              setTimeout(function() { scrollPage(); }, 60);
+            }
+          },
+          scrollPage = function() {
+            svgs.forEach( function( el, i ) {
+              if (inViewport(el.parentNode, 0.5)) {
+                svgArr[i].render();
+              }
+            });
+            didScroll = false;
+          },
+          resizeHandler = function() {
+            function delayed() {
+              scrollPage();
+              resizeTimeout = null;
+            }
+            if (resizeTimeout) {
+              clearTimeout(resizeTimeout);
+            }
+            resizeTimeout = setTimeout(delayed, 200);
+          };
+
+        window.addEventListener('scroll', scrollHandler, false);
+        window.addEventListener('resize', resizeHandler, false);
+      }
+
+      init();
+
+    })();
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-42945379-1', 'mitchjlee.com');
+    ga('send', 'pageview');
