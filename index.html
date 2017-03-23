@@ -44,6 +44,32 @@ body, html {
   background-color: #555;
   color: white;
 }
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+    
 </style>
 </head>
 <body>
@@ -52,7 +78,7 @@ body, html {
   <div class="hero-text">
     <h1 style="font-size:50px">I am ABC</h1>
     <p>And I'm a</p>
-    
+    <p class="mySlides"> Learner </p>
     <p class="mySlides"> Dreamer </p>
     <p class="mySlides"> Programmer </p>
    
@@ -61,12 +87,13 @@ body, html {
 </div>
 
 <!-- Navigation -->
-<nav class="w3-bar w3-black">
-  <a href="#home" class="w3-button w3-bar-item">About Me</a>
-  <a href="#band" class="w3-button w3-bar-item">Education</a>
-  <a href="#tour" class="w3-button w3-bar-item">Projects</a>
-  <a href="#contact" class="w3-button w3-bar-item">Experience</a>
-</nav>
+<div class="topnav">
+  <a class="active" href="#home">About Me</a>
+  <a href="#news">Education</a>
+  <a href="#contact">Projects</a>
+  <a href="#about">Experience</a>
+  <a href="#about">Coming soon</a>
+</div>
 
 <script>
 // Automatic slideshow - change image every 3 seconds
