@@ -245,7 +245,7 @@ span.psw {
   <a href="#">About</a>
   <a href="#">Education</a>
   <a href="#">Projects</a>
-  <a href="https://github.com/meght/meght.github.io/blob/master/loginform">LOGIN</a>
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
 </div>
 <div id="main">
   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
@@ -276,7 +276,8 @@ span.psw {
   </div>
     </div>
  
-
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
 <form action="/action_page.php">
   <div class="imgcontainer">
     <img src="img_avatar2.png" alt="Avatar" class="avatar">
@@ -298,6 +299,7 @@ span.psw {
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>
+</div>
 <script>
 // Automatic slideshow - change image every 3 seconds
 var myIndex = 0;
