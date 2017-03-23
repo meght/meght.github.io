@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/lib/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <head>
 <style>
 body, html {
@@ -8,7 +12,7 @@ body, html {
 }
 
 .hero-image {
-  background-image: url("IMG_4399[1].JPG");
+  background-image: url("photographer.jpg");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -46,13 +50,40 @@ body, html {
 
 <div class="hero-image">
   <div class="hero-text">
-    <h1 style="font-size:50px">I am John Doe</h1>
-    <p>And I'm a Photographer</p>
+    <h1 style="font-size:50px">I am ABC</h1>
+    <p>And I'm a</p>
+    <section>
+    <p class="mySlides"> Dreamer </p>
+    <p class="mySlides"> Programmer </p>
+    </section>
     <button>Hire me</button>
   </div>
 </div>
 
-<p>Page Content..</p>
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="#home" class="w3-button w3-bar-item">About Me</a>
+  <a href="#band" class="w3-button w3-bar-item">Education</a>
+  <a href="#tour" class="w3-button w3-bar-item">Projects</a>
+  <a href="#contact" class="w3-button w3-bar-item">Experience</a>
+</nav>
 
+<script>
+// Automatic slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
 </body>
 </html>
