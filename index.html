@@ -69,13 +69,22 @@ body, html {
     background-color: #4CAF50;
     color: white;
 }
-    .column {
-    float: left;
-    width: 33.3%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-}
     
+
+ div {
+    position:relative;
+    height: 100%;
+    width:100%;
+}
+
+ .column {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}   
 </style>
 </head>
 <body>
@@ -109,7 +118,7 @@ body, html {
      <img src="cover.jpg" alt="Cover" style="width:100%">
      <p><button class="button" id="Cover">Cover</button></p>
   </div><br><br>
-   
+
 <script>
 // Automatic slideshow - change image every 3 seconds
 var myIndex = 0;
