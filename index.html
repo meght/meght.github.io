@@ -169,22 +169,47 @@ body, html {
 <div id="main">
   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
 </div>
+
+<div id="education" class="hero-image">
+    <div class="hero-text">
+       <p class="edu">
+          Master of Science, Electrical and Computer Engineering<br>
+          Texas Tech University- Class of 2016
+       </p>
+       <p class="edu">
+          Bachelor of Technology, Electronics and Computer Engineering<br>
+          JawaharLal Technological University- Class of 2014
+       </p>
+     </div>
+</div>
 <script>
 // Automatic Slideshow - change image every 3 seconds
 var myIndex = 0;
+var myEdu = 0;
 carousel();
 
 function carousel() {
     var i;
+    var j;
     var x = document.getElementsByClassName("me");
     for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
+        x[i].style.display = "none";
     }
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}
     x[myIndex-1].style.display = "block";
     setTimeout(carousel, 3000);
+    
+   var y = document.getElementsByClassName("edu");
+    for (j = 0; i < y.length; j++) {
+        y[j].style.display = "none";
+    }
+    myEdu++;
+    if (myEdu > y.length) {myEdu = 1}
+    y[myEdu-1].style.display = "block";
+    setTimeout(carousel, 2000);
 }
+   
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
