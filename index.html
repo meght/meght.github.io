@@ -187,10 +187,9 @@ body, html {
 var myIndex = 0;
 var myEdu = 0;
 carousel();
-
+edu();
 function carousel() {
     var i;
-    var j;
     var x = document.getElementsByClassName("me");
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
@@ -200,6 +199,10 @@ function carousel() {
     x[myIndex-1].style.display = "block";
     setTimeout(carousel, 3000);
     
+   
+}
+function edu() {
+   var j;
    var y = document.getElementsByClassName("edu");
     for (j = 0; i < y.length; j++) {
         y[j].style.display = "none";
@@ -207,9 +210,8 @@ function carousel() {
     myEdu++;
     if (myEdu > y.length) {myEdu = 1}
     y[myEdu-1].style.display = "block";
-    setTimeout(carousel, 2000);
+    setTimeout(carousel, 2000); 
 }
-   
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
