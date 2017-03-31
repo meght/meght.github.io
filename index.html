@@ -53,7 +53,7 @@
 
        <button id="hire">Hire me</button>
      </div>
-</div><br><br>
+</div>
 
 
 <div id="myTopnav" class="topnav">
@@ -64,7 +64,7 @@
     <a href="#skill"> Skills </a>
     <a href="#places"> Location </a>
     <a href="#soon"> Coming Soon </a>
-</div><br><br>
+</div>
 
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -74,7 +74,7 @@
     <a href="#skill"> Skills </a>
     <a href="#places"> Location </a>
     <a href="#soon"> Coming Soon </a>
-</div><br><br>
+</div>
 
 <div id="main">
   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
@@ -83,16 +83,16 @@
 
 <div id="education" class="hero-image">
     <div class="hero-text">
-       <p class="me">
+       <p class="edu">
           Master of Science, Electrical and Computer Engineering<br>
           Texas Tech University- Class of 2016
        </p>
-       <p class="me">
+       <p class="edu">
           Bachelor of Technology, Electronics and Computer Engineering<br>
           JawaharLal Technological University- Class of 2014
        </p>
      </div>
-</div><br><br>
+</div>
 
 
 <div id="experience" class="slideshow-container">
@@ -105,7 +105,7 @@
          SWIFT Technology Center, Manassas, Virginia.
          June 2016- Present.
        </div>
-      </div><br>
+      </div>
    
 
        <div class="mySlides">
@@ -116,7 +116,7 @@
          PSPE Lab, Texas Tech University.
          September 2015 – May 2016.
        </div>
-      </div><br>
+      </div>
 
        <div class="mySlides">
        <div class="numbertext">2 / 4</div>
@@ -126,7 +126,7 @@
          Hospitality Services, Texas Tech University.
          September 2015 – May 2016.
        </div>
-      </div><br>
+      </div>
 
        <div class="mySlides">
        <div class="numbertext">2 / 4</div>
@@ -136,18 +136,18 @@
          Electronics Corporation of Ltd.
          December 2013 – May 2014.
        </div>
-      </div><br>
+      </div>
     
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
-<br>
+
 
 <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
-</div><br>
+</div>
 
 
 <div id="projects" class="slideshow-container">
@@ -158,7 +158,7 @@
        <div class="text"> 
          Enhancement and maintenance of COTS and Baseline Tools Minimum Security Baselines Web Portal
        </div>
-      </div><br>
+      </div>
 
        <div class="mySlides">
        <div class="numbertext">2 / 4</div>
@@ -166,7 +166,7 @@
        <div class="text">
          Denial of Service attack using DETER tools
        </div>
-      </div><br>
+      </div>
 
        <div class="mySlides">
        <div class="numbertext">2 / 4</div>
@@ -174,7 +174,7 @@
        <div class="text">
          Parametric and Functional Testing of Mixed Signal and Digital IC’s using NI Savage T4 and NI PXI Modules 
        </div>
-      </div><br>
+      </div>
 
        <div class="mySlides">
        <div class="numbertext">2 / 4</div>
@@ -182,18 +182,18 @@
        <div class="text">
          Design of Hydraulic Pressure Booster and Micro Mirror using SANDIA MEMS tools
        </div>
-      </div><br>
+      </div>
     
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
-<br>
+
 
 <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
-</div><br>
+</div>
 
 
 <div id="skills">
@@ -203,7 +203,7 @@
   <div id="myBar">10%</div>
 </div>
 
-<br>
+
 <button onclick="myphp()">PHP</button> 
 <button onclick="myhtml()">HTML</button>
 <button onclick="mycss()">CSS</button>
@@ -229,33 +229,6 @@ function carousel() {
     setTimeout(carousel, 3000);
 }
 
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
 </script>
 
 
