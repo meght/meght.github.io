@@ -287,7 +287,7 @@ body {font-family: Verdana,sans-serif;margin:0}
 
        <div class="mySlides fade">
        <div class="numbertext">2 / 4</div>
-       <img src="skills.jpg" style="width:100%">
+       <img src="cover.jpg" style="width:100%">
        <div class="hero-text">
          Graduate Student Assistant
          PSPE Lab, Texas Tech University.
@@ -330,8 +330,8 @@ body {font-family: Verdana,sans-serif;margin:0}
 <script>
 // Automatic Slideshow - change image every 3 seconds
 var myIndex = 0;
-var myEdu = 0;
-edu();
+
+
 carousel();
 
 function carousel() {
@@ -348,17 +348,6 @@ function carousel() {
    
 }
 
-function edu() {
-   var j;
-   var y = document.getElementsByClassName("edu");
-    for (j = 0; j< y.length; j++) {
-        y[j].style.display = "none";
-    }
-    myEdu++;
-    if (myEdu > y.length) {myEdu = 1}
-    y[myEdu-1].style.display = "block";
-    setTimeout(carousel, 3000); 
-}
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
