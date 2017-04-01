@@ -81,7 +81,8 @@ body, html {
 #main {
     transition: margin-left .5s;
     padding: 16px;
-    
+      }
+.main{
     margin-top: 30px; /* Add a top margin to avoid content overlay */
 
 }
@@ -129,7 +130,7 @@ body, html {
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
   }
@@ -239,6 +240,7 @@ body {font-family: Verdana,sans-serif;margin:0}
     </style>
    </head>
 <body>
+ <div class="main">
 <div id="myTopnav" class="topnav">
     <a class="active" href="#home">About me</a>
     <a href="#education"> Education</a>
@@ -332,7 +334,7 @@ body {font-family: Verdana,sans-serif;margin:0}
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
-   
+   </div>   
 
 <script>
 // Automatic Slideshow - change image every 3 seconds
