@@ -217,7 +217,9 @@ hr {
     margin: auto;
     width: 40%;
 }
-
+.me {
+  color: yellow;
+  }
 
   </style>
 <body>
@@ -241,9 +243,9 @@ hr {
   <div class="w3-display-middle w3-margin-top w3-center">
     <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>I am a</b></span> </h1>
      <div class="hero-text">
-    <h1 style="font-size:50px" color="yellow" id="me">I am John Doe</h1>
-       <h1 style="font-size:50px" color="yellow" id="me">I  Doe</h1>
-       <h1 style="font-size:50px" color="yellow" id="me">I  Doe</h1>
+    <h1 style="font-size:50px" color="yellow" class="me">I am John Doe</h1>
+       <h1 style="font-size:50px" color="yellow" class="me">I  Doe</h1>
+       <h1 style="font-size:50px" color="yellow" class="me">I  Doe</h1>
     </div>
    </div>
 </header>
@@ -519,7 +521,7 @@ carousel();
 
 function carousel() {
     var i;
-    var x = document.getElementsById("me");
+    var x = document.getElementsByClassName("me");
     for (i = 0; i < x.length; i++) {
        x[i].style.display = "none";
     }
