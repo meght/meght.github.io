@@ -513,6 +513,21 @@ var countdownfunction = setInterval(function() {
     }
 }, 1000);
 
+    // Automatic Slideshow - change image every 3 seconds
+var myInd = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassId("me");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myInd++;
+    if (myInd > x.length) {myInd = 1}
+    x[myInd-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
 
   </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
