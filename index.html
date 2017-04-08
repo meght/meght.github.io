@@ -123,10 +123,9 @@
     text-align: center;
 }
 
-#London {background-color:red;}
-#Paris {background-color:green;}
-#Tokyo {background-color:blue;}
-#Oslo {background-color:orange;}
+#Masters {background-color:blue;}
+#Bachelors {background-color:lightseagreen;}
+#Online{background-color:blue;}
 
   button.accordion {
     background-color: #eee;
@@ -319,32 +318,40 @@ hr {
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
-<p>Click on the buttons inside the tabbed menu:</p>
-
-<div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
+<br>
+<div id="Masters" class="tabcontent">
+  
+  <p>Master of Science<br> 
+    Electrical and Computer Engineering <br> 
+    Texas Tech University <br>
+   Lubbock, Texas <br>
+  </p>
 </div>
 
-<div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
+<div id="Bachelors" class="tabcontent">
+  
+  <p>Bachelor of Technology <br>
+  Electronics and Communication Engineering <br>
+  JawaharLal Nehru University<br>
+  Hyderabad, India <br>
+  </p> 
 </div>
 
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
+<div id="Online" class="tabcontent">
+  
+  <p>Many many amazing books! <br>
+   w3schools<br> 
+   tutorials point<br>
+   Coursera<br>
+   Udemy<br>
+  </p>
 </div>
 
-<div id="Oslo" class="tabcontent">
-  <h3>Oslo</h3>
-  <p>Oslo is the capital of Norway.</p>
-</div>
 
-<button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">London</button>
-<button class="tablink" onclick="openCity('Paris', this, 'green')">Paris</button>
-<button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
-<button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
+<button class="tablink" onclick="openEdu('Masters', this, 'red')" id="defaultOpen">Graduation</button>
+<button class="tablink" onclick="openEdu('Bachelors', this, 'green')">Under Graduation</button>
+<button class="tablink" onclick="openEdu('Online', this, 'blue')">Online</button>
+
 
   <button class="accordion">Section 1</button>
 <div class="panel">
@@ -463,7 +470,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
     
- function openCity(cityName,elmnt,color) {
+ function openEdu(eduName,elmnt,color) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -473,7 +480,7 @@ function showSlides(n) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].style.backgroundColor = "";
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(eduName).style.display = "block";
     elmnt.style.backgroundColor = color;
 
 }
